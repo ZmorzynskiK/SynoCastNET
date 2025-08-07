@@ -18,7 +18,7 @@ Uses `YoutubeExplode` library.
 ## How to use with Synology NAS
 1. Check `config.json` file to see sample config.
 1. Just place the `SynoCastNET` linux arm64 executable somewhere (ie. in `/volume1/Apps`) on synology and place `config.json` alongside.
-2. Create new folder for downloaded data on synology, ie. `/SynoCastNET`
+2. Create new folder for downloaded data on synology, ie. `/volume1/SynoCastNET`
 3. In `config.json` specify `outputDirectory` as `/volume1/SynoCastNET`
 4. Run `./SynoCastNET` just to check if the files are downloaded to this output folder.
 5. Set `/volume1/SynoCastNET` as `Team folder` in Synology Drive Admin and setup user as normal
