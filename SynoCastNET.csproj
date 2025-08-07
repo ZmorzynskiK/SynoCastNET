@@ -14,8 +14,21 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="YoutubeExplode" Version="6.5.4" />
     <PackageReference Include="System.Text.Json" Version="9.0.8" />
+  </ItemGroup>
+
+	<PropertyGroup>
+		<VersionPrefix>1.1.0</VersionPrefix>
+		<SourceRevisionId>buildUTC$([System.DateTime]::UtcNow.ToString("yyyy-MM-dd, HH:mm:ss"))</SourceRevisionId>
+	</PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="AngleSharp">
+      <HintPath>libs\AngleSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="YoutubeExplode">
+      <HintPath>libs\YoutubeExplode.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
