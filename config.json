@@ -1,0 +1,13 @@
+{
+  "outputDirectory": "./output",
+  "sources": [
+    {
+      "type": "channel_handle",
+      "url": "https://www.youtube.com/@veritasium",
+      "name": "Veritasium",
+      "maxItems": 3,
+      "language": "en",
+      "container": "mp4"
+    }
+  ]
+}
