@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <PackageReference Include="System.Text.Json" Version="9.0.8" />
+    <PackageReference Include="YoutubeExplode" Version="6.5.5" />
   </ItemGroup>
 
 	<PropertyGroup>
@@ -25,9 +26,6 @@
   <ItemGroup>
     <Reference Include="AngleSharp">
       <HintPath>libs\AngleSharp.dll</HintPath>
-    </Reference>
-    <Reference Include="YoutubeExplode">
-      <HintPath>libs\YoutubeExplode.dll</HintPath>
     </Reference>
   </ItemGroup>
 
