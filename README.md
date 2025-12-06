@@ -2,7 +2,7 @@
 YouTube audio only podcast downloader for Synology NAS. Pure .NET, no docker!
 
 ## Introduction
-This is simple, .NET 9 console app just to get audio files from YouTube videos.
+This is simple, .NET 10 console app just to get audio files from YouTube videos.
 I use it to get YouTube podcasts.
 Uses `YoutubeExplode` library.
 
@@ -28,3 +28,7 @@ Uses `YoutubeExplode` library.
 cd /volume1/Apps/SynoCastNET
 ./SynoCastNET
 ```
+
+If you find it useful, then
+
+<a href="https://www.buymeacoffee.com/theoldn00be" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
