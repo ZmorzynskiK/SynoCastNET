@@ -88,7 +88,15 @@ static async Task ProcessVideosAsync(IEnumerable<PlaylistVideo> videos, Config c
             var v = await youtube.Videos.GetAsync(video.Url);
             Console.WriteLine($"Title: {v.Title}");
             Console.WriteLine($"Url: {v.Url}");
-            Console.WriteLine($"Duration: {v.Duration}");
+            Console.WriteLine($"Duration: {video.Duration}");
+
+            // check duration limits if set
+            if(source.minDurationSecs.HasValue && video.Duration.Value.TotalSeconds < source.minDurationSecs)
+            {
+                Console.WriteLine($"Video duration {video.Duration} is shorter than minimum {source.minDurationSecs} seconds. Skipping.");
+                continue;
+            }
+
             var streamManifest = await youtube.Videos.Streams.GetManifestAsync(v.Url, manifestTimeout.Token);
             var audioStreams = streamManifest.GetAudioOnlyStreams();
             var streamInfo = audioStreams

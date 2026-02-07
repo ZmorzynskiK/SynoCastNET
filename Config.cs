@@ -11,7 +11,8 @@ public record Source(
     int maxItems,
     string language,
     string? container = null,
-    int? maxDownloads = null
+    int? maxDownloads = null,
+    int? minDurationSecs = 60       // do we want to skip short videos? default to 1 minute, as many shorts are just noise and not worth the effort
 );
 
 public record Config(
